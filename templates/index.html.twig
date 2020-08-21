@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Hello IndexController {% endblock %}
+
+{% block body %}
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph. {{ number }}</p>
+
+<!-- array -->
+{% for skill in skills %}
+	<p>{{ skill }}</p>
+{% endfor %}
+
+<!-- array -->
+{% for i in range(0, 3) %}
+    {{ i }},
+{% endfor %}
+
+{% endblock %}
